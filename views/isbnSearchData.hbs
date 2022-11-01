@@ -1,0 +1,19 @@
+<h1><center>Book Details</center></h1>
+
+{{#if flag}}
+    <table id="book-data-table">
+        <tr>
+            <td><img src={{data.img}} height='300px' width='220px'></td>
+            <td>
+                <b>ISBN:</b> {{data.ISBN}} <br><br>
+                <b>Book Title:</b> {{data.title}} <br><br>
+                <b>Author:</b> {{data.author}} <br><br>
+                <b>Category:</b> {{data.category}} <br><br>
+                <b>Inventory:</b> {{data.inventory}} <br><br>
+            </td>
+        </tr>
+    </table>
+{{/if}}
+{{#unless flag}}
+    <h3>Book not found! Try again with a different ISBN.</h3>
+{{/unless}}

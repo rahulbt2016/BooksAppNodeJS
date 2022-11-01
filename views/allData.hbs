@@ -1,0 +1,30 @@
+<h1><center>All Books</center></h1>
+
+<table id="all-book-table">
+    <thead>
+        <tr>
+            <th>Book Cover</th>
+            <th>ISBN</th>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Inventory</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+            {{!-- {{#if this.inventory }} --}}
+                {{!-- <tr> --}}
+                    {{#highlightCheck this}}
+                        <td><img src={{this.img}} height='200px' width='160px'></td>
+                        <td>{{this.ISBN}}</td>
+                        <td>{{this.title}}</td>
+                        <td>{{this.author}}</td>
+                        <td>{{this.category}}</td>
+                        <td>{{checkInventory this.inventory}}</td>
+                    {{/highlightCheck}}
+                {{!-- </tr> --}}
+            {{!-- {{/if}} --}}
+        {{/each}}
+    </tbody>
+</table>

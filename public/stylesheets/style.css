@@ -1,0 +1,74 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    background-color: lavender;
+    color: palevioletred;
+    text-shadow: 2px 2px 5px greenyellow;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+main {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    background-color: dimgray;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+footer p,
+footer a {
+    color: white;
+    font-size: 18px;
+}
+
+#book-data-table td {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#all-book-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#all-book-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#all-book-table th,
+#all-book-table td {
+    padding: 12px 15px;
+}
+
+#all-book-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#all-book-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#all-book-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#all-book-table tbody tr.active-row {
+    font-weight: bold;
+    color: red;
+    background-color: yellow;
+}
