@@ -29,6 +29,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 //Setting up the Express-Handlebars template engine and initializing '.hbs' as its file extension
+//Also adding helpers
 app.engine('.hbs', exphbs.engine({ extname: '.hbs',
                                    helpers: {
 
