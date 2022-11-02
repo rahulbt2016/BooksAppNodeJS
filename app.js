@@ -32,7 +32,8 @@ app.use(express.json());
 //Also adding helpers
 app.engine('.hbs', exphbs.engine({ extname: '.hbs',
                                    helpers: {
-
+                                    
+                                    //Helper function to check if inventory is 0 and print "out of stock"
                                     checkInventory: function(inventory) {
 
                                       if (inventory <= 0)
@@ -40,7 +41,8 @@ app.engine('.hbs', exphbs.engine({ extname: '.hbs',
                                       else
                                         return inventory;
                                     },
-
+                                    
+                                    //Helper function to check if book is out of stock and highlight it
                                     highlightCheck: function (book, options) {
 
                                       if(book.inventory <= 0) {
